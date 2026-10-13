@@ -130,14 +130,12 @@ app.get('/api/movies/play/:id', (req, res) => {
   res.json({
     id: id,
     sources: [
-      { label: 'Server 1 (VidLink)',    url: `https://vidlink.pro/movie/${id}` },
-      { label: 'Server 2 (VidSrc.icu)',  url: `https://vidsrc.icu/embed/movie/${id}` },
-      { label: 'Server 3 (VidSrc.cc)',   url: `https://vidsrc.cc/v2/embed/movie/${id}` },
-      { label: 'Server 4 (VidSrc.to)',   url: `https://vidsrc.to/embed/movie/${id}` },
-      { label: 'Server 5 (Embed.su)',    url: `https://embed.su/embed/movie/${id}` },
-      { label: 'Server 6 (AutoEmbed)',   url: `https://player.autoembed.cc/embed/movie/${id}` },
-      { label: 'Server 7 (MultiEmbed)',  url: `https://multiembed.mov/?video_id=${id}&tmdb=1` },
-      { label: 'Server 8 (2Embed)',      url: `https://www.2embed.cc/embed/${id}` }
+      { label: 'Server 1 (VidLink Pro)', url: `https://vidlink.pro/movie/${id}` },
+      { label: 'Server 2 (Embed.su)',     url: `https://embed.su/embed/movie/${id}` },
+      { label: 'Server 3 (Videasy)',      url: `https://player.videasy.net/movie/${id}` },
+      { label: 'Server 4 (Vidsrc CC)',    url: `https://vidsrc.cc/v2/embed/movie/${id}` },
+      { label: 'Server 5 (Vidsrc Pro)',   url: `https://vidsrc.pro/embed/movie/${id}` },
+      { label: 'Server 6 (MultiEmbed)',   url: `https://multiembed.mov/?video_id=${id}&tmdb=1` }
     ]
   });
 });
