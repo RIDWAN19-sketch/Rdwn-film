@@ -135,7 +135,12 @@ app.get('/api/movies/play/:id', (req, res) => {
       { label: 'Server 3 (Videasy)',      url: `https://player.videasy.net/movie/${id}` },
       { label: 'Server 4 (Vidsrc CC)',    url: `https://vidsrc.cc/v2/embed/movie/${id}` },
       { label: 'Server 5 (Vidsrc Pro)',   url: `https://vidsrc.pro/embed/movie/${id}` },
-      { label: 'Server 6 (MultiEmbed)',   url: `https://multiembed.mov/?video_id=${id}&tmdb=1` }
+      { label: 'Server 6 (MultiEmbed)',   url: `https://multiembed.mov/?video_id=${id}&tmdb=1` },
+      { label: 'Server 7 (EmbedWave)',    url: `https://embedwave.cc/embed/movie/${id}` },
+      { label: 'Server 8 (VidCore)',      url: `https://www.vidcore.org/embed/movie/${id}` },
+      { label: 'Server 9 (VidLink Pro)', url: `https://vidlink.pro/movie/${id}` },
+      { label: 'Server 10 (Embed.su)',    url: `https://embed.su/embed/movie/${id}` },
+      { label: 'Server 11 (Videasy)',     url: `https://player.videasy.net/movie/${id}` }
     ]
   });
 });
